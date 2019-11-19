@@ -52,15 +52,13 @@ li {
 
 .header__logo {}
 
-.header__logo a,
-.footer__logo a {
+.header__logo a, .footer__logo a {
    color: #2aacc8;
    font-size: 50px;
    font-weight: 400;
 }
 
-.header__logo span,
-.footer__logo span{
+.header__logo span, .footer__logo span {
    color: #000;
    font-weight: 700;
 }
@@ -91,7 +89,7 @@ li {
 }
 
 .header__drop-down.drop-down+.header__drop-down.drop-down {
-   margin-left: 12px !important;
+   margin-left: 12px;
 }
 
 .header__drop-down.drop-down+.header__link-blog {
@@ -156,6 +154,20 @@ li {
    border-top: 5px solid #2aacc8;
    background-color: #fff;
    transition: all .3s;
+}
+
+.header__menu-btn {
+   width: 30px;
+   display: none;
+}
+
+
+
+.header__menu-row {
+   width: 100%;
+   background-color: #000;
+   height: 4px;
+   margin-bottom: 4px;
 }
 
 .header__drop-down.drop-down:hover .drop-down__list {
@@ -293,7 +305,6 @@ li {
 
 /*******/
 
-
 .works .slick-list {
    margin-left: -15px;
    margin-right: -15px;
@@ -329,9 +340,7 @@ li {
    left: auto;
 }
 
-.works__title, 
-.testimonials__title, 
-.clients-logo__title {
+.works__title, .testimonials__title, .clients-logo__title {
    padding: 25px 0 15px 40px;
    position: relative;
    font-family: "arial", sans-serif;
@@ -339,9 +348,7 @@ li {
    text-transform: uppercase;
 }
 
-.works__title::before ,
-.testimonials__title::before, 
-.clients-logo__title::before {
+.works__title::before, .testimonials__title::before, .clients-logo__title::before {
    content: "";
    position: absolute;
    left: 0;
@@ -401,30 +408,31 @@ li {
    justify-content: space-between;
    margin-bottom: 40px;
 }
+
 .testimonials {
    max-width: 440px;
 }
 
-.testimonials p{
+.testimonials p {
    font-size: 14px;
    line-height: 24px;
    color: #363636;
 }
-.testimonials span{
+
+.testimonials span {
    display: block;
    padding-top: 30px;
    font-weight: 700;
    font-style: italic;
 }
 
-
-.testimonials__title::before{
+.testimonials__title::before {
    background-image: url(../images/clients/testi.svg);
    width: 24px;
    height: 23px;
-} 
-.clients-logo__title::before {
+}
 
+.clients-logo__title::before {
    background-image: url(../images/clients/user.svg);
    width: 24px;
    height: 20px;
@@ -435,18 +443,17 @@ li {
    border: 1px solid #81e4ed;
    background-color: #e8fcfe;
    display: flex;
-   justify-content: space-between;  
+   justify-content: space-between;
 }
-.download__text {
 
+.download__text {
    font-size: 16px;
    line-height: 26px;
    color: #363636;
    max-width: 620px;
-
 }
 
-.download__btn  a{
+.download__btn a {
    padding: 20px 20px 20px 70px;
    font-weight: 700;
    font-size: 18px;
@@ -455,12 +462,11 @@ li {
    position: relative;
    border: 1px solid rgb(42, 172, 200);
    border-radius: 8px;
-   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
-   background: linear-gradient( to top, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
-
+   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+   background: linear-gradient( to top, rgb(42, 172, 200) 0%, rgb(96, 206, 222) 15%, rgb(114, 218, 230) 50%, rgb(129, 228, 237) 100%);
 }
 
-.download__btn  a::before{
+.download__btn a::before {
    content: '';
    position: absolute;
    background-image: url(../images/clients/download.svg);
@@ -484,43 +490,44 @@ li {
    justify-content: space-between;
    margin-bottom: 35px;
 }
-.footer__item {
 
+.footer__item {}
 
-}
-
-
-.footer__item-content{
+.footer__item-content {
    width: 240px;
 }
+
 .footer__item-titles {
    font-family: "arial", sans-serif;
    text-transform: uppercase;
    font-weight: 700;
 }
+
 .footer__item-text {
    padding-top: 25px;
    font-size: 14px;
    color: #363636;
 }
-.footer__item-list{
+
+.footer__item-list {
    width: 115px;
 }
 
 .footer__list {
    padding-top: 10px;
 }
-.footer__list li{
+
+.footer__list li {
    display: block;
-   
 }
-.footer__list a{
+
+.footer__list a {
    font-size: 14px;
    color: #363636;
    line-height: 26px;
 }
 
-.footer__item-contact{
+.footer__item-contact {
    width: 150px;
 }
 
@@ -530,7 +537,8 @@ li {
    font-size: 14px;
    margin-bottom: 16px;
 }
-.footer__addres  span{
+
+.footer__addres span {
    display: block;
    font-weight: 700;
 }
@@ -539,23 +547,26 @@ li {
    color: #363636;
    font-size: 14px;
 }
-.footer__item-social{
+
+.footer__item-social {
    width: 185px;
 }
+
 .footer__social {
    padding-top: 25px;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
 }
+
 .footer__bottom {
    display: flex;
    justify-content: space-between;
 }
+
 .footer__copy {
    font-size: 13px;
    line-height: 18px;
    color: #363636;
    max-width: 650px;
 }
-
